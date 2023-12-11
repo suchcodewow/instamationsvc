@@ -2,7 +2,7 @@
 # az subscription show
 
 $webAppName = "scw-webapp-shawnpearson"
-$webASPName = "scw-asp-shawnpearson"
+#$webASPName = "scw-asp-shawnpearson"
 $resourceGroup = "shawn-pearson-projects"
 $localRepo = "./publish.zip"
 
