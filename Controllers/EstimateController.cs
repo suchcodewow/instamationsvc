@@ -23,7 +23,7 @@ public class EstimateController : ControllerBase
         {
             webAppName = "local";
         }
-        var response = new { Status = "ready", appname = webAppName };
+        var response = new { status = "ready", appname = webAppName, version = "1.1" };
         return Ok(response);
     }
 
@@ -61,7 +61,7 @@ public class EstimateController : ControllerBase
         {
             if (PolicyCost.ItemValue > 850000)
             {
-                PolicyCost.Messages = PolicyCost.Messages + ";estimation svc (PreviousInsurer): Infinity Eye special pricing & itemvalue > $850,000 [TODO: ADD HIGH VALUE PRICE TABLE- DEFAULT TO $1 FOR NOW. WILL FIX TOMORROW. OO! A SQURREL!]";
+                PolicyCost.Messages = PolicyCost.Messages + ";estimation svc (PreviousInsurer): Infinity Eye special pricing & itemvalue > $850,000 [TODO: ADD HIGH VALUE PRICE TABLE- DEFAULT TO $1 FOR NOW. WILL FIX TOMORROW. OO! A SQUIRREL!]";
                 EstimateBuilder = 1;
             }
             if (PolicyCost.ItemValue < 850000)

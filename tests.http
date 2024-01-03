@@ -1,4 +1,4 @@
-POST https://scw-webapp-colossalcactus.azurewebsites.net/
+POST http://localhost:5130
 Content-Type: application/json
 
 {"CreateYear": 1000,
