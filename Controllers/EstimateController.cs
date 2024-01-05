@@ -23,7 +23,9 @@ public class EstimateController : ControllerBase
         {
             webAppName = "local";
         }
-        var response = new { status = "ready", appname = webAppName, version = "1.2" };
+        var response = new { status = "ready", appname = webAppName, version = "1.3" };
+        string text = JsonNet.Serialize(response);
+        _logger.LogInformation(text);
         return Ok(response);
     }
 
