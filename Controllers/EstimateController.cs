@@ -23,7 +23,7 @@ public class EstimateController : ControllerBase
         {
             webAppName = "local";
         }
-        var response = new { status = "ready", appname = webAppName, version = "1.1" };
+        var response = new { status = "ready", appname = webAppName, version = "1.2" };
         return Ok(response);
     }
 
