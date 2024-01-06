@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.HttpLogging;
-using Serilog;
-using Serilog.Events;
+// using Serilog;
+// using Serilog.Events;
 using Microsoft.Extensions.Logging.AzureAppServices;
 
 var builder = WebApplication.CreateBuilder(args);
